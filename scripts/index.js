@@ -52,9 +52,132 @@ console.log(formulario.cidade);
 //objetos cria um conjunto de variaveis com seus respectivos valores e tambem e possivel criar outros objetos dentro do mesmo e algo interessante a se notar
 //e que se o objeto declarado estiver declarado com const se torna uma das raras vezes em que um const pode ser mudado.*/
 
-//
 
-//estruturas de repetição
+//operadores aritmeticos
+/*
+adição: +
+subtração: -
+multiplicação: *
+divisão: /
+módulo: %
+exponenciação: **
+
+exemplo de operadores aritmeticos:
+
+//adiçao
+let numero1 = 10;
+let numero2 = 5;
+let resultado = numero1 + numero2;
+console.log(resultado);
+
+//subtração
+let numero3 = 20;
+let numero4 = 8;
+let resultado2 = numero3 - numero4;
+console.log(resultado2);
+
+//multiplicação
+let numero5 = 4;
+let numero6 = 6;
+let resultado3 = numero5 * numero6;
+console.log(resultado3);
+
+//divisão
+let numero7 = 15;
+let numero8 = 3;
+let resultado4 = numero7 / numero8;
+console.log(resultado4);
+
+//módulo
+let numero9 = 10;
+let numero10 = 3;
+let resultado5 = numero9 % numero10;
+console.log(resultado5);
+
+//exponenciação
+let numero11 = 2;
+let numero12 = 3;
+let resultado6 = numero11 ** numero12;
+console.log(resultado6);
+*/
+
+//operadores de comparação
+/*
+igualdade: ==
+estritamente igual: ===
+diferença: !=
+estritamente diferente: !==
+maior que: >
+menor que: < 
+maior ou igual a: >=
+menor ou igual a: <=
+
+exemplo de operadores de comparação:
+let numero1 = 10;
+let numero2 = "10";
+console.log(numero1 == numero2); // true
+console.log(numero1 === numero2); // false
+console.log(numero1 != numero2); // false
+console.log(numero1 !== numero2); // true
+console.log(numero1 > 5); // true
+console.log(numero1 < 15); // true
+console.log(numero1 >= 10); // true
+console.log(numero1 <= 9); // false
+*/
+
+//operadores lógicos
+/*
+AND: &&
+OR: ||
+NOT: !
+exemplo de operadores lógicos:
+let idade = 25;
+let temCarteira = true;
+
+console.log(idade >= 18 && temCarteira); // true
+console.log(idade >= 18 || temCarteira); // true
+console.log(!temCarteira); // false
+*/
+
+//operadores de atribuição
+/*
+atribuição simples: = ou seja, x = y atribui o valor de y para x
+atribuição de adição: += ou seja, x += y é equivalente a x = x + y
+atribuição de subtração: -= ou seja, x -= y é equivalente a x = x - y
+atribuição de multiplicação: *= ou seja, x *= y é equivalente a x = x * y
+atribuição de divisão: /= ou seja, x /= y é equivalente a x = x / y
+atribuição de módulo: %= ou seja, x %= y é equivalente a x = x % y
+atribuição de exponenciação: **= ou seja, x **= y é equivalente a x = x ** y
+
+exemplo de operadores de atribuição:
+let x = 10;
+x += 5;
+console.log(x); // 15
+
+let y = 20;
+y -= 3;
+console.log(y); // 17   
+
+let z = 4;
+z *= 2;
+console.log(z); // 8
+
+let a = 16;
+a /= 4;
+console.log(a); // 4
+
+let b = 10;
+b %= 3;
+console.log(b); // 1
+
+let c = 2;
+c **= 3;
+console.log(c); // 8
+
+*/
+
+
+//estruturas de repetição 
 /*
 for (let numero = 0 ;numero <= 20;numero++) {
 
@@ -117,6 +240,7 @@ nome === "lourival" ? console.log("O nome é lourival.") : console.log("O nome n
 
 //operador ternário é uma estrutura condicional que permite executar um bloco de codigo dependendo de uma condição,ele é utilizado para verificar se a condição é verdadeira,caso seja verdadeira o bloco de codigo antes dos dois pontos é executado,caso seja falsa o bloco de codigo depois dos dois pontos é executado,ele é uma forma mais concisa de escrever um if else simples.
 */
+
 
 //funções
 /*
@@ -246,7 +370,8 @@ function incrementar() {
     contador++;
     return contador;
 }
-*/
+*/  
+
 
 //classes
 /*
@@ -436,3 +561,5 @@ const [primeiro, ...resto] = array1;
 console.log(primeiro); // Saída: 1
 console.log(resto); // Saída: [2, 3]
 */
+
+
