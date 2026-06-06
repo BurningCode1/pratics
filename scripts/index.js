@@ -52,7 +52,6 @@ console.log(formulario.cidade);
 //objetos cria um conjunto de variaveis com seus respectivos valores e tambem e possivel criar outros objetos dentro do mesmo e algo interessante a se notar
 //e que se o objeto declarado estiver declarado com const se torna uma das raras vezes em que um const pode ser mudado.*/
 
-
 //operadores aritmeticos
 /*
 adição: +
@@ -176,8 +175,7 @@ console.log(c); // 8
 
 */
 
-
-//estruturas de repetição 
+//estruturas de repetição
 /*
 for (let numero = 0 ;numero <= 20;numero++) {
 
@@ -240,7 +238,6 @@ nome === "lourival" ? console.log("O nome é lourival.") : console.log("O nome n
 
 //operador ternário é uma estrutura condicional que permite executar um bloco de codigo dependendo de uma condição,ele é utilizado para verificar se a condição é verdadeira,caso seja verdadeira o bloco de codigo antes dos dois pontos é executado,caso seja falsa o bloco de codigo depois dos dois pontos é executado,ele é uma forma mais concisa de escrever um if else simples.
 */
-
 
 //funções
 /*
@@ -370,8 +367,7 @@ function incrementar() {
     contador++;
     return contador;
 }
-*/  
-
+*/
 
 //classes
 /*
@@ -562,4 +558,140 @@ console.log(primeiro); // Saída: 1
 console.log(resto); // Saída: [2, 3]
 */
 
+//prototypes
+/*
+function Pessoa(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+}
+Pessoa.prototype.apresentar = function() {
+    return `Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.`;
+};
 
+const pessoa1 = new Pessoa("Lourival", 22);
+console.log(pessoa1.apresentar()); // Saída: Olá, meu nome é Lourival e tenho 22 anos.
+//prototypes são uma forma de criar objetos e definir suas propriedades e comportamentos,eles são muito utilizados para organizar o codigo e criar estruturas mais complexas,eles permitem a criação de objetos com características semelhantes,facilitando a reutilização de codigo e a manutenção do codigo,eles são uma parte fundamental da programação orientada a objetos em JavaScript.
+*/
+
+//funçoes de string
+/*
+const texto = "Olá, mundo!";
+console.log(texto.length); // Saída: 13
+console.log(texto.toUpperCase()); // Saída: OLÁ, MUNDO!
+console.log(texto.toLowerCase()); // Saída: olá, mundo!
+console.log(texto.includes("mundo")); // Saída: true
+console.log(texto.replace("mundo", "JavaScript")); // Saída: Olá, JavaScript!
+
+const frase = "JavaScript é uma linguagem de programação.";
+console.log(frase.split(" ")); // Saída: ["JavaScript", "é", "uma", "linguagem", "de", "programação."]
+console.log(frase.indexOf("linguagem")); // Saída: 17
+console.log(frase.substring(0, 10)); // Saída: JavaScript
+
+mais exemplos de funções de string:
+const nome = "Lourival";
+console.log(nome.charAt(0)); // Saída: L
+console.log(nome.endsWith("val")); // Saída: true
+console.log(nome.startsWith("Lou")); // Saída: true
+console.log(nome.trim()); // Saída: "Lourival" (remove espaços em branco)
+
+//funções de string são métodos que podem ser utilizados para manipular e transformar strings,elas são muito úteis para realizar operações comuns em strings,como verificar o comprimento,converter para maiúsculas ou minúsculas,verificar se uma substring está presente,substituir partes da string,entre outras operações.
+*/
+
+//funçoes de array
+/*
+const numeros = [1, 2, 3, 4, 5];
+console.log(numeros.length); // Saída: 5
+console.log(numeros.includes(3)); // Saída: true
+console.log(numeros.indexOf(4)); // Saída: 3
+console.log(numeros.slice(1, 4)); // Saída: [2, 3, 4]
+
+const frutas = ["maçã", "banana", "laranja"];
+console.log(frutas.join(", ")); // Saída: "maçã, banana, laranja"
+console.log(frutas.reverse()); // Saída: ["laranja", "banana", "maçã"]
+console.log(frutas.sort()); // Saída: ["banana", "laranja", "maçã"]
+
+const numeros2 = [1, 2, 3, 4, 5];
+console.log(numeros2.map(numero => numero * 2)); // Saída: [2, 4, 6, 8, 10]
+console.log(numeros2.filter(numero => numero % 2 === 0)); // Saída: [2, 4]
+console.log(numeros2.reduce((total, numero) => total + numero, 0)); // Saída: 15
+
+//funções de array são métodos que podem ser utilizados para manipular e transformar arrays,elas são muito úteis para realizar operações comuns em arrays,como verificar o comprimento,verificar se um elemento está presente,obter o índice de um elemento,obter uma parte do array,unir os elementos em uma string,inverter a ordem dos elementos,ordenar os elementos,entre outras operações.
+*/
+
+//funçoes de objeto
+/*
+const pessoa = {    
+    nome: "Lourival",
+    idade: 22,
+    cidade: "Hortolândia"
+};
+console.log(pessoa.nome); // Saída: Lourival
+console.log(pessoa.idade); // Saída: 22
+console.log(pessoa.cidade); // Saída: Hortolândia
+console.log(Object.keys(pessoa)); // Saída: ["nome", "idade", "cidade"]
+console.log(Object.values(pessoa)); // Saída: ["Lourival", 22, "Hortolândia"]
+console.log(Object.entries(pessoa)); // Saída: [["nome", "Lourival"], ["idade", 22], ["cidade", "Hortolândia"]] 
+
+mais exemplos de funções de objeto:
+const pessoa2 = {    
+    nome: "João",
+    idade: 30,
+    cidade: "São Paulo"
+};
+console.log(pessoa2.hasOwnProperty("nome")); // Saída: true
+console.log(pessoa2.hasOwnProperty("sobrenome")); // Saída: false
+console.log(Object.assign({}, pessoa2, { profissao: "Desenvolvedor" })); // Saída: { nome: "João", idade: 30, cidade: "São Paulo", profissao: "Desenvolvedor" }
+
+//funções de objeto são métodos que podem ser utilizados para manipular e transformar objetos,elas são muito úteis para realizar operações comuns em objetos,como acessar as propriedades,obter as chaves,obter os valores,obter as entradas,entre outras operações.
+*/
+
+//funçoes de data
+/*
+const data = new Date();
+console.log(data); // Saída: Data e hora atual
+console.log(data.getFullYear()); // Saída: Ano atual
+console.log(data.getMonth()); // Saída: Mês atual (0-11)
+console.log(data.getDate()); // Saída: Dia do mês atual
+console.log(data.getHours()); // Saída: Hora atual
+console.log(data.getMinutes()); // Saída: Minuto atual
+console.log(data.getSeconds()); // Saída: Segundo atual
+const data2 = new Date("2022-01-01");
+console.log(data2); // Saída: 2022-01-01T00:00:00.000Z
+console.log(data2.getFullYear()); // Saída: 2022
+console.log(data2.getMonth()); // Saída: 0 (Janeiro)
+console.log(data2.getDate()); // Saída: 1
+console.log(data2.getHours()); // Saída: 0
+console.log(data2.getMinutes()); // Saída: 0
+console.log(data2.getSeconds()); // Saída: 0
+//funções de data são métodos que podem ser utilizados para manipular e transformar objetos de data,elas são muito úteis para realizar operações comuns em datas,como obter o ano,obter o mês,obter o dia do mês,obter a hora,obter o minuto,obter o segundo,entre outras operações.
+*/
+
+//funçoes de math
+/*
+console.log(Math.PI); // Saída: 3.141592653589793
+console.log(Math.E); // Saída: 2.718281828459045
+console.log(Math.abs(-5)); // Saída: 5
+console.log(Math.ceil(4.2)); // Saída: 5
+console.log(Math.floor(4.8)); // Saída: 4
+console.log(Math.round(4.5)); // Saída: 5
+console.log(Math.max(1, 2, 3, 4, 5)); // Saída: 5
+console.log(Math.min(1, 2, 3, 4, 5)); // Saída: 1
+console.log(Math.random()); // Saída: Número aleatório entre 0 e 1
+//funções de math são métodos que podem ser utilizados para manipular e transformar números,elas são muito úteis para realizar operações comuns em números,como obter o valor absoluto,arredondar para cima ou baixo,obter o máximo ou mínimo entre vários números,gerar números aleatórios,entre outras operações.
+*/
+
+//funçoes de console
+/*
+console.log("Este é um log de informação.");
+console.error("Este é um log de erro.");
+console.warn("Este é um log de aviso.");
+console.table([{ nome: "Lourival", idade: 22 }, { nome: "João", idade: 30 }]);
+// Código a ser medido
+console.time("Tempo de execução");
+console.timeEnd("Tempo de execução");
+
+console.group("Grupo de logs");
+//funções de console são métodos que podem ser utilizados para exibir informações no console,elas são muito úteis para depuração e teste de código.
+*/
+
+//
